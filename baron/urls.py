@@ -22,6 +22,7 @@ from about.views import about_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
     path('home/', home_page, name='home'),
     path('about/', about_page, name='about'),
     path("", include("blog.urls"), name="blog-urls"),
