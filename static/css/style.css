@@ -1,6 +1,16 @@
 /* navbar */
-.custom-navbar {
-    height: 120px;
+.navbar {
+    min-height: 90px; 
+}
+
+.navbar-brand {
+    font-size: 40px; 
+    font-family: 'Annapurna SIL', sans-serif;;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    line-height: 100px; 
 }
 
 .navbar-light .navbar-text {
@@ -13,13 +23,13 @@
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-item.active .nav-link,
 .navbar-light .navbar-nav .nav-link:visited {
-    color: white; /* Silver color */
+    color: white; 
     }
 
 
     /* footer */
 .dark-bg {
-    background-color: #343a40; /* You can use your preferred dark color code */
+    background-color: #343a40; 
     }
 footer {margin: auto;
 width: 100%;
@@ -29,4 +39,5 @@ body {height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
