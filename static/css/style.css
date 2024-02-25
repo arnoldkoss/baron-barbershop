@@ -5,7 +5,7 @@
 
 .navbar-brand {
     font-size: 40px; 
-    font-family: 'Annapurna SIL', sans-serif;;
+    font-family: 'Annapurna SIL', sans-serif;
 }
 
 .navbar-brand,
@@ -33,11 +33,40 @@
     }
 footer {margin: auto;
 width: 100%;
-margin-bottom: 0;}
+margin-bottom: 0;
+font-family: 'Annapurna SIL', sans-serif;
+font-size: 20px;}
 
 body {height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: lightgray;
     
+}
+
+.card {
+    border: none;
+    background-color: lightgray;
+}
+
+.author {
+    color: black;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+
+.post-link{
+    color: darkblue;
+}
+
+.post-link:hover,
+.page-link {
+    color: black;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
 }
