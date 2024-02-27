@@ -62,8 +62,9 @@ body {height: 100vh;
 }
 
 
-.post-link{
-    color: darkblue;
+.post-link {
+    text-decoration: none;
+    color: #445261;
 }
 
 .post-link:hover,
@@ -78,8 +79,52 @@ body {height: 100vh;
 
 .card-text {
     font-size: 1.2rem;
+   
 }
 
 .card {
     border: 1px solid #007BFF; 
+}
+
+.banner {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.banner-text {
+    background-color: #445261;
+    color: white;
+    position: relative;
+}
+
+.banner-image {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.post-title {
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+}
+
+.post-subtitle {
+    margin-left: 6%;
+    color: white;
+}
+
+.author {
+    color: black;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.card-body{
+    color: black;
 }
