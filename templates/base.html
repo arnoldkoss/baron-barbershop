@@ -48,6 +48,16 @@
                   >About</a
                 >
               </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link
+                  {% if request.path == about_url %}active{%endif%}"
+                  aria-current="page"
+                  href="{% url 'blog' %}"
+                  >Our Work</a
+                >
+              </li>
+              
 
           </ul>
           <span class="navbar-text ml-auto">
