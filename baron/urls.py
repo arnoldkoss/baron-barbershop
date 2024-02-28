@@ -16,15 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from home.views import home_page
-
-
+from home import views  # Make sure to import your views correctly
 
 urlpatterns = [
     path("about/", include("about.urls"), name="about-urls"),
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path('home/', home_page, name='home'),
-    path("", include("blog.urls"), name="blog-urls"),
+    path('', views.home_page, name='home'),  # Correctly reference the function-based view
+    path('blog/', include("blog.urls"), name="blog-urls"),
 ]
