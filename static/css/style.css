@@ -133,3 +133,24 @@ body {height: 100vh;
 .faded {
     opacity: 0.4; 
 }
+
+.btn-secondary {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: 1px solid #4CAF50; /* Green border */
+}
+
+.btn-secondary:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Red background */
+    border-color: #dc3545; /* Red border */
+    color: #ffffff; /* White text */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Slightly darker red on hover */
+    border-color: #bd2130; /* Slightly darker border on hover */
+}
