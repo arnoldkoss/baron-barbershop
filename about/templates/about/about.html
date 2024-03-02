@@ -6,7 +6,13 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-4 text-center">
-      <img src="{% static 'images/baronB.png' %}" alt="Baron B." width="75%" />
+      {% if "placeholder" in about.profile_image.url %}
+      <img src="{% static 'images/baronB.png' %}" width="75%"
+        alt="placeholder image" >
+      {% else %}
+      <img src="{{ about.profile_image.url }}" width="75%"
+        alt="{{ about.title }}">
+      {% endif %}
     </div>
   </div>
   <div class="row">
