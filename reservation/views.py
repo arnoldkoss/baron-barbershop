@@ -1,15 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Reservation
-
+from .forms import ReservationForm
 
 def book_reservation(request):
     """
-    Renders the Reservation page
+    Renders the booking form and processes form submissions.
     """
-    reservation = Reservation.objects.all().order_by('-date', '-time', '-gender').first()
+    reserve_form = ReservationForm()  # Initialize the form
 
-    return render(
-        request,
-        "reservation/reservation.html",
-        {"reservation": reservation},
-    )
+    if request.method == 'POST':
+        reserve_form = ReservationForm(request.POST)  # Fill the form with data from the request
+        if reserve_form.is_valid():  # Check if the form is valid
+            reserve_form.save()  # Save the valid form/reservation
+            # Optionally, you can redirect to a 'thank you' page or back to the form with a success message
+            return redirect('book_reservation')  # Redirect to avoid double posting
+
+    context = {'form': reserve_form}  # Prepare the context for rendering
+    return render(request, "reservation/reservation.html", context)
