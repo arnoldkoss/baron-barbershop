@@ -4,6 +4,7 @@
 {% load crispy_forms_tags %}
 {% comment %}
 
+
 {% if messages %}
     {% for message in messages %}
         <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
@@ -48,9 +49,10 @@
 {% endcomment %}
 <div class="form-container container">
   <form action="" method="POST">
+    <h2>Book Now</h2>
     
     {% csrf_token %}
-    {{form}}
+    {{ form.as_p }}
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>

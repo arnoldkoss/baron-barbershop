@@ -1,3 +1,4 @@
+from django.core.exceptions import ValidationError
 from django import forms
 from .models import Reservation
 from datetime import datetime, time, timedelta, date
@@ -24,3 +25,10 @@ class ReservationForm(forms.ModelForm):
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
         }
+    
+    def clean_date(self):
+        input_date = self.cleaned_data.get('date')
+        today = datetime.now().date()
+        if input_date is not None and input_date <= today:
+            raise ValidationError("The date must be at least one day in the future.")
+        return input_date
