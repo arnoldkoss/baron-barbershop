@@ -1,9 +1,42 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-<form method="post">
+{% load crispy_forms_tags %}
+{% comment %}
+<form>
+  <!-- Name Field -->
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+  </div>
+  <!-- Date Field -->
+  <div class="form-group">
+    <label for="appointmentDate">Date</label>
+    <input type="date" class="form-control" id="appointmentDate" name="appointmentDate">
+  </div>
+  <!-- Time Field -->
+  <div class="form-group">
+    <label for="appointmentTime">Time</label>
+    <input type="time" class="form-control" id="appointmentTime" name="appointmentTime">
+  </div>
+  <!-- Gender Field -->
+  <div class="form-group">
+    <label for="gender">Gender</label>
+    <select class="form-control" id="gender" name="gender">
+      <option>Please select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <!-- Submit Button -->
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endcomment %}
+<form action="" method="POST">
+  
   {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit" class="btn btn-primary">Book Now</button>
+  {{form}}
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 {% endblock content %}
