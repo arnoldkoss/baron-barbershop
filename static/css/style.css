@@ -1,6 +1,7 @@
 /* navbar */
 .navbar {
-    min-height: 90px; 
+    min-height: 90px;
+    z-index: 1050; 
 }
 
 .navbar-brand {
@@ -13,9 +14,9 @@
     font-size: 20px;
 }
 
-.navbar-brand,
-.navbar-nav .nav-link {
-    
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: red !important; /* Adjust the color value as needed */
 }
 
 .navbar-light .navbar-text {
@@ -137,22 +138,22 @@ body {height: 100vh;
 .btn-secondary {
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
-    border: 1px solid #4CAF50; /* Green border */
+    border: 1px solid #4CAF50; 
 }
 
 .btn-secondary:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049; 
 }
 
 .btn-delete {
-    background-color: #dc3545; /* Red background */
-    border-color: #dc3545; /* Red border */
-    color: #ffffff; /* White text */
+    background-color: #dc3545; 
+    border-color: #dc3545; 
+    color: #ffffff; 
 }
 
 .btn-delete:hover {
-    background-color: #c82333; /* Slightly darker red on hover */
-    border-color: #bd2130; /* Slightly darker border on hover */
+    background-color: #c82333; 
+    border-color: #bd2130; 
 }
 
 .form-control {
@@ -189,18 +190,3 @@ img {
     height: auto;
 }
 
-@media (max-width: 991.98px) {
-    .navbar-collapse {
-        background-color: #343a40; /* Ensures background consistency */
-        overflow-y: auto; /* Allows scrolling if content is taller than the screen */
-        width: 100%; /* Ensures the navbar-collapse stretches across the screen */
-    }
-
-    .navbar-toggler.collapsed + .navbar-collapse {
-        transition: all 0.3s ease; /* Smooth transition for the collapse action */
-    }
-
-    .navbar-toggler:not(.collapsed) {
-        /* This ensures the navbar-toggler icon changes (if needed) when the menu is open */
-    }
-}
