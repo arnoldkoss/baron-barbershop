@@ -4,8 +4,15 @@
     z-index: 1050; 
 }
 
+#tg-burger{
+    color: #ffffff;
+    
+}
+
+
+
 .navbar-brand {
-    font-size: 40px; 
+    font-size: 2em; 
     font-family: 'Annapurna SIL', sans-serif;
 }
 
@@ -16,7 +23,7 @@
 
 .navbar-brand:hover,
 .navbar-nav .nav-link:hover {
-    color: red !important; /* Adjust the color value as needed */
+    color: red !important; 
 }
 
 .navbar-light .navbar-text {
@@ -189,5 +196,4 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 
