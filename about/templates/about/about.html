@@ -7,10 +7,10 @@
   <div class="row justify-content-center">
     <div class="col-4 text-center">
       {% if "placeholder" in about.profile_image.url %}
-      <img src="{% static 'images/baronB.png' %}" width="75%"
+      <img src="{% static 'images/baronB.png' %}" 
         alt="placeholder image" >
       {% else %}
-      <img src="{{ about.profile_image.url }}" width="75%"
+      <img src="{{ about.profile_image.url }}" 
         alt="{{ about.title }}">
       {% endif %}
     </div>
