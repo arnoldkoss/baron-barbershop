@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Reservation(models.Model):
     """
     Represents a reservation in the system.
@@ -10,7 +11,7 @@ class Reservation(models.Model):
         ('male', 'Male'),
         ('female', 'Female'),
     ]
-    
+
     name = models.CharField(max_length=50)
     date = models.DateField()
     time = models.TimeField()
@@ -18,4 +19,3 @@ class Reservation(models.Model):
 
     def __str__(self):
         return f"{self.name} on {self.date} at {self.time}"
-
