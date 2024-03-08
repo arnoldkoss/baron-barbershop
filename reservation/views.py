@@ -6,7 +6,12 @@ from .forms import ReservationForm
 
 def book_reservation(request):
     """
-    Renders the booking form and processes form submissions.
+    View function for handling reservation bookings.
+
+    This function renders a reservation form (`ReservationForm`) for GET requests
+    and processes the form for POST requests. If the form submission is valid,
+    it saves a new `Reservation` instance, displays a success message with the booking
+    details, and redirects to a specified URL (assumed to be named 'reservation').
     """
     reserve_form = ReservationForm()
     if request.method == 'POST':

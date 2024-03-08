@@ -3,6 +3,9 @@ from django.db import models
 # Create your models here.
 
 class Reservation(models.Model):
+    """
+    Represents a reservation in the system.
+    """
     GENDER_CHOICES = [
         ('male', 'Male'),
         ('female', 'Female'),
