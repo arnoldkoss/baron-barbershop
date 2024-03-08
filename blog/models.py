@@ -6,6 +6,9 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 class Post(models.Model):
+    """
+    Stores a single blog post entry related to :model:'auth.User'.
+    """
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
     author = models.ForeignKey(
@@ -25,6 +28,9 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    """
+    Model representing a comment on a blog post.
+    """
     post = models.ForeignKey(
     Post, on_delete=models.CASCADE, related_name="comments")
     author = models.ForeignKey(

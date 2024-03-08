@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import Reservation
 from .forms import ReservationForm
-from django.contrib import messages
+
 
 def book_reservation(request):
     """

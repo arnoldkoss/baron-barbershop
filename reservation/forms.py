@@ -1,7 +1,8 @@
 from django.core.exceptions import ValidationError
 from django import forms
-from .models import Reservation
 from datetime import datetime, time, timedelta, date
+from .models import Reservation
+
 
 def generate_time_choices():
     def time_range(start, end, delta):
