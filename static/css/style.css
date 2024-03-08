@@ -40,15 +40,7 @@
     }
 
 
-    /* footer */
-.dark-bg {
-    background-color: #343a40; 
-    }
-footer {margin: auto;
-    width: 100%;
-    margin-bottom: 0;
-    font-family: 'Annapurna SIL', sans-serif;
-    font-size: 20px;}
+/* Body */
 
 body {height: 100vh;
     display: flex;
@@ -58,10 +50,31 @@ body {height: 100vh;
     
 }
 
+/* Cards */
+
 .card {
     border: none;
     background-color: lightgray;
 }
+
+.card-text {
+    font-size: 1.2rem;
+   
+}
+
+.card {
+    border: 1px solid #007BFF; 
+}
+
+.card-body{
+    color: black;
+}
+
+.faded {
+    opacity: 0.4; 
+}
+
+/* Author */
 
 .author {
     color: black;
@@ -69,6 +82,17 @@ body {height: 100vh;
     text-transform: uppercase;
 }
 
+/* Posts */
+.post-title {
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+}
+
+.post-subtitle {
+    margin-left: 6%;
+    color: white;
+}
 
 .post-link {
     text-decoration: none;
@@ -85,14 +109,7 @@ body {height: 100vh;
     color: lightgray;
 }
 
-.card-text {
-    font-size: 1.2rem;
-   
-}
-
-.card {
-    border: 1px solid #007BFF; 
-}
+/* Banner */
 
 .banner {
     margin-top: 10px;
@@ -109,38 +126,8 @@ body {height: 100vh;
     position: relative;
 }
 
-.banner-image {
-    position: relative;
-    overflow: hidden;
-}
 
-
-
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-    color: white;
-}
-
-.post-subtitle {
-    margin-left: 6%;
-    color: white;
-}
-
-.author {
-    color: black;
-    margin: 5px;
-    text-transform: uppercase;
-}
-
-.card-body{
-    color: black;
-}
-
-
-.faded {
-    opacity: 0.4; 
-}
+/* Buttons */
 
 .btn-secondary {
     background-color: #4CAF50; /* Green background */
@@ -162,6 +149,8 @@ body {height: 100vh;
     background-color: #c82333; 
     border-color: #bd2130; 
 }
+
+/* Forms */
 
 .form-control {
     width: 100%; 
@@ -192,8 +181,27 @@ body {height: 100vh;
     display: block; 
 }
 
+/* Images */
+
 img {
     max-width: 100%;
     height: auto;
 }
 
+.banner-image {
+    position: relative;
+    overflow: hidden;
+}
+
+    /* footer */
+.dark-bg {
+    background-color: #343a40; 
+}
+
+footer {margin: auto;
+    width: 100%;
+    margin-bottom: 0;
+    font-family: 'Annapurna SIL', sans-serif;
+    font-size: 20px;}
+
+    
