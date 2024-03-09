@@ -26,7 +26,6 @@ class TestBlogViews(TestCase):
         self.assertIn(b"Blog content", response.content)
         self.assertIsInstance(
             response.context['comment_form'], CommentForm)
-    
 
     def test_successful_comment_submission(self):
         """Test for posting a comment on a post"""
