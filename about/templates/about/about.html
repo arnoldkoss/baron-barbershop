@@ -6,12 +6,12 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-4 text-center">
+       <!-- Check if profile image exists, if not, use a placeholder image -->
       {% if "placeholder" in about.profile_image.url %}
-      <img src="{% static 'images/baronB.png' %}" 
-        alt="placeholder image" >
+      <img src="{% static 'images/baronB.png' %}" alt="placeholder image">
       {% else %}
-      <img src="{{ about.profile_image.url }}" 
-        alt="{{ about.title }}">
+      <!-- Otherwise, display the profile image -->
+      <img src="{{ about.profile_image.url }}" alt="{{ about.title }}">
       {% endif %}
     </div>
   </div>

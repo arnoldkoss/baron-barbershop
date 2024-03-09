@@ -15,23 +15,26 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
+                                <!-- Check if featured image exists, if not, use a placeholder image -->
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top" src="{% static 'images/default.jpg' %}"
                                     alt="placeholder image">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}"
-                                    alt="{{ post.title }}">
+                                <!-- Otherwise, display the featured image -->
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">By: {{ post.author }}</p>
                                 </div>
                             </div>
+                            <!-- Link to the post detail page -->
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card-text">{{post.excerpt}}</p>
                             </a>
 
                             <hr />
+                            <!-- Display the created date of the post -->
                             <p class="card-text text-muted h6">{{ post.created_on}}</p>
                         </div>
                     </div>
@@ -45,15 +48,19 @@
             </div>
         </div>
     </div>
-
+    <!-- Pagination navigation -->
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
+            <!-- Previous page link -->
             {% if page_obj.has_previous %}
-            <li class="page-item"><a href="?page={{ page_obj.previous_page_number }}" class="page-link rounded-pill"> &laquo; Prev </a></li>
+            <li class="page-item"><a href="?page={{ page_obj.previous_page_number }}" class="page-link rounded-pill">
+                    &laquo; Prev </a></li>
             {% endif %}
+            <!-- Next page link -->
             {% if page_obj.has_next %}
-            <li class="page-item"><a href="?page={{ page_obj.next_page_number }}" class="page-link rounded-pill"> Next &raquo;</a></li>
+            <li class="page-item"><a href="?page={{ page_obj.next_page_number }}" class="page-link rounded-pill"> Next
+                    &raquo;</a></li>
             {% endif %}
         </ul>
     </nav>
