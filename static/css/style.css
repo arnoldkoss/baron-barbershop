@@ -1,53 +1,55 @@
 /* navbar */
 .navbar {
     min-height: 90px;
-    z-index: 1050; 
+    z-index: 1050;
 }
 
-#tg-burger{
+#tg-burger {
     color: #ffffff;
-    
+
 }
 
 
 
 .navbar-brand {
-    font-size: 2em; 
+    font-size: 2em;
     font-family: 'Annapurna SIL', sans-serif;
 }
 
-.navbar-text{
-    font-family:'Annapurna SIL', sans-serif;
+.navbar-text {
+    font-family: 'Annapurna SIL', sans-serif;
     font-size: 20px;
 }
 
 .navbar-brand:hover,
 .navbar-nav .nav-link:hover {
-    color: red !important; 
+    color: red !important;
 }
 
 .navbar-light .navbar-text {
-    color: white;}
+    color: white;
+}
 
 
-    
+
 
 .navbar-light .navbar-brand,
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-item.active .nav-link,
 .navbar-light .navbar-nav .nav-link:visited {
-    color: white; 
-    }
+    color: white;
+}
 
 
 /* Body */
 
-body {height: 100vh;
+body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: lightgray;
-    
+
 }
 
 /* Cards */
@@ -59,19 +61,19 @@ body {height: 100vh;
 
 .card-text {
     font-size: 1.2rem;
-   
+
 }
 
 .card {
-    border: 1px solid #007BFF; 
+    border: 1px solid #007BFF;
 }
 
-.card-body{
+.card-body {
     color: black;
 }
 
 .faded {
-    opacity: 0.4; 
+    opacity: 0.4;
 }
 
 /* Author */
@@ -130,32 +132,34 @@ body {height: 100vh;
 /* Buttons */
 
 .btn-secondary {
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    border: 1px solid #4CAF50; 
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    border: 1px solid #4CAF50;
 }
 
 .btn-secondary:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
 }
 
 .btn-delete {
-    background-color: #dc3545; 
-    border-color: black; 
-    color: #ffffff; 
+    background-color: #dc3545;
+    border-color: black;
+    color: #ffffff;
 }
 
 .btn-delete:hover {
-    background-color: #c82333; 
-    border-color: #bd2130; 
+    background-color: #c82333;
+    border-color: #bd2130;
 }
 
 /* Forms */
 
 .form-control {
-    width: 100%; 
-    max-width: 250px; 
-    
+    width: 100%;
+    max-width: 250px;
+
 }
 
 .form-container {
@@ -163,22 +167,24 @@ body {height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; 
-    max-width: 500px; 
+    width: 100%;
+    max-width: 500px;
     margin: auto;
 }
+
 .form-container form {
     width: 100%;
 }
-.form-container form > * {
-    margin: 10px 0; 
+
+.form-container form>* {
+    margin: 10px 0;
 }
 
 .form-container input,
 .form-container select,
 .form-container button {
-    width: 100%; 
-    display: block; 
+    width: 100%;
+    display: block;
 }
 
 /* Images */
@@ -193,15 +199,15 @@ img {
     overflow: hidden;
 }
 
-    /* footer */
+/* footer */
 .dark-bg {
-    background-color: #343a40; 
+    background-color: #343a40;
 }
 
-footer {margin: auto;
+footer {
+    margin: auto;
     width: 100%;
     margin-bottom: 0;
     font-family: 'Annapurna SIL', sans-serif;
-    font-size: 20px;}
-
-    
+    font-size: 20px;
+}
