@@ -58,4 +58,66 @@ For the Baron Barbershop website, I've carefully selected a color scheme that em
 ![Typography](/static/images/readme/googleFonts.png)
 I went for a Google 'Annapurna SIL'  for its unique blend of traditional elegance and modern clarity. This font, with its roots in the Devanagari script, evokes a sense of worldly sophistication and cultural richness, aligning perfectly with our barbershop's ethos of combining classic grooming traditions with contemporary style. I used it in the navbar and footer.
 
-#### Wireframes
+### Wireframes
+#### PC
+![Home wireframe](/static/images/readme/wireframeHome.png)
+
+![About wireframe](/static/images/readme/aboutPage.png)
+
+![Our Work wireframe](/static/images/readme/wireframeOurWork.png)
+
+#### Mobile
+
+![Home wireframe mobile](/static/images/readme/wfHomeTel.png)
+
+![About wireframe mobile](/static/images/readme/wfAboutTel.png)
+
+![Our Work wireframe mobile](/static/images/readme/wfOurWorkTel.png)
+
+### Features
+
+- ### Navigation Bar
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+  - Featured on all pages, the full responsive navigation bar includes links to the Logo, Home page, About, Our Work, Reservations, Register, Login and Logout page and is identical in each page to allow for easy navigation.
+
+  People who haven't created a user account yet have the option to sign in. People with user accounts can use the login.
+
+#### Visitors
+
+PC
+![Navbar PC](/static/images/readme/navbarPC.png)
+
+Mobile
+![Navbar mobile](/static/images/readme/navbarMobile.png)
+
+
+For people that have registered, the Navigation Bar gives the Users easy acces to the Reservations page.
+
+#### Signed-In Users
+
+![Navbar reservations](/static/images/readme/navbarRes.png)
+
+
+
+- ### User Account
+
+The User Accounts in this project are managed by the AllAuth Django package.
+
+- ### User Sign up
+
+Users can register on the page with a username, an optional email, and password. After registration all their information is stored in the database.
+
+![Sign Up Page](/static/images/readme/signUp.png)
+
+
+- ### User Login
+
+Registered users can log in to their accounts using their credentials.
+![Login Page](/static/images/readme/login.png)
+
+
+- ### User Logout
+
+Logged-in users can log out of the site by clicking the logout link in the navigation bar. They have to confirm their decision.
+
+![Logout Page](/static/images/readme/logout.png)
