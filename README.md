@@ -251,3 +251,14 @@ The JS Hint Validator shows no errors.
 
 ### PEP8
 The Pep8 CI Linter has been diligently applied, ensuring that all files adhere impeccably to the esteemed guidelines of PEP 8.
+
+### Manual Testing
+Sign Up, invalid Sign Up, Login, invalid Login, Logout testing table:
+
+| Feature       | Expected Outcome                                                                                         | Testing Performed                                                                                   | Result                                                                    | Pass/Fail |
+|---------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------|
+| Sign Up       | When the User is signing up with valid credentials, an account should be created. After Signing up, the User is logged in. (Email is optional) | Signing up with username = test, email = test@test.se, password = Secure123!                        | The User is logged in. An Account has been created.                       | Pass      |
+| Invalid Sign Up | When the User is signing in with invalid credentials, they get informed about the invalid data.            | Signing up with username = superlongusername123456789superlong, password = 123 | The User gets informed about an invalid password. The Username gets shorten to the appropriate length after creation. | Pass      |
+| Login         | Can login in with the correct password and username.                                                      | Login with username = test, password = Secure123!                                                    | User is logged in.                                                        | Pass      |
+| Invalid Login | Users can't login with invalid credentials.                                                               | Login with username = test, password = InSecure123!                                                  | The user is not logged in.                                                | Pass      |
+| Logout        | After Confirming to logout, the user gets logged out.                                                     | Pressing Button to confirm the logout.                                                               | User is logged out.                                                       | Pass      |
