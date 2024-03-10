@@ -121,3 +121,34 @@ Registered users can log in to their accounts using their credentials.
 Logged-in users can log out of the site by clicking the logout link in the navigation bar. They have to confirm their decision.
 
 ![Logout Page](/static/images/readme/logout.png)
+
+- ### User Content Display
+
+The Our Work page displays all posts created by the admin from the admin panel.
+
+![Our Work posts](/static/images/readme/owPost.png)
+
+![Our Work post](/static/images/readme/bPost.png)
+
+
+- ### User Comment section
+
+As a logged-in user awaiting comment approval.
+
+![comment pending](/static/images/readme/commentPend.png)
+
+Comment approved by admin.
+
+![comment approved](/static/images/readme/commentAppr.png)
+
+Comment count is updated also.
+
+![comment count](/static/images/readme/commCount.png)
+
+As a logged-in user you can update or delete your own comment
+
+![comment update delete](/static/images/readme/updateDel.png)
+
+After the comment was created or updated a confirmation message is displayed.
+
+![confirmation message](/static/images/readme/pendMessage.png)
