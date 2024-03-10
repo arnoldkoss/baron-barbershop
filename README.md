@@ -335,3 +335,14 @@ ElephantSQL  add-on.
 #### Code used
 
 I used the Blog walkthrough project as inspiration for the blog section of my project, but not to the full extent. I have tailored it to fit my view of how the site should look.
+
+#### Content
+
+- The icons in the footer were taken from Font Awesome
+- The pictures used were taken from Pexels.com
+- Django pagination
+- I learned about django unittests from The Dumbfounds
+
+#### Acknowledgments
+
+I want to thank my mentor Luke for his great guidance and support and to the CI tutors for the great help I got.
