@@ -133,7 +133,9 @@ The Our Work page displays all posts created by the admin from the admin panel.
 
 - ### User Comment section
 
-As a logged-in user awaiting comment approval.
+Logged-in users can create comments on the platform. Comments appear below the thread they relate to.
+
+Comment awaiting for admin approval.
 
 ![comment pending](/static/images/readme/commentPend.png)
 
@@ -152,3 +154,21 @@ As a logged-in user you can update or delete your own comment
 After the comment was created or updated a confirmation message is displayed.
 
 ![confirmation message](/static/images/readme/pendMessage.png)
+
+When a user wants to delete a comment, a confirmation modal is displayed.
+
+![confirmation modal](/static/images/readme/confModal.png)
+
+- ### User About section
+
+The About page showcases a description and an image curated by the admin through the admin panel.
+
+![about page](/static/images/readme/aboutPageS.png)
+
+- ### User Reservation section
+
+
+The reservation section allows logged-in users to schedule a service by providing their name, desired date, preferred time, and gender. After the reservation is made, the booking is displayed in the admin panel for management and tracking purposes.
+
+![reservation page](/static/images/readme/resPage.png)
+
