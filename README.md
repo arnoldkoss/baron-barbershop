@@ -216,6 +216,8 @@ Inside the Django Admin panel, Administrators have acces to the models of the dj
 - Reservations ERD
 ![reservations ERD](/static/images/readme/ReservERD.png)
 
+- About post ERD
+![about page ERD](/static/images/readme/aboutERD.png)
 
 ### Security
 
