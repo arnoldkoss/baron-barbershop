@@ -172,3 +172,59 @@ The reservation section allows logged-in users to schedule a service by providin
 
 ![reservation page](/static/images/readme/resPage.png)
 
+After the reservation is made, the user receives a confirmation message containing the date and time of the booking
+
+![reservation message](/static/images/readme/resTime.png)
+
+- ### User Home page, Information section
+
+The home page serves as a hub for information about the barbershop, featuring a brief self-description along with details about the services provided.
+
+![home page](/static/images/readme/homeInf.png)
+
+- ### Pagination
+For a better load time and usage with multiple threads, the blog has a pagination feature.
+
+![pagination](/static/images/readme/pag.png)
+
+- ### Messages
+
+Users get notified about changes on the platform through the django message system.
+
+![django message](/static/images/readme/loginMess.png)
+
+
+- ### Django Admin Panel
+Inside the Django Admin panel, Administrators have acces to the models of the django project.
+
+![admin panel](/static/images/readme/admin.png)
+
+### Features Left to Implement
+
+- Implement CRUD capability to allow users to update or delete reservations.
+- I Consider adding a profile page for users to manage their information and preferences.
+- I Explore the possibility of adding a feature for users to like posts or content for increased engagement and interaction.
+
+### Security
+
+I strive to maintain optimal security measures in my Django project. I've ensured that only logged-in users can perform specific actions within the app. When a comment is made but not yet approved by the admin, only the author can view, update, or delete the comment. It's only after the admin's approval that the comment becomes visible to all users. Additionally, non-logged-in users are unable to leave comments; instead, they see a message prompting them to log in first before leaving a comment. These steps ensure both security and user engagement within the platform. Similarly, only logged-in users have the capability to make reservations, further enhancing security while fostering user engagement within the platform.
+
+The safety of user registration and login processes by integrating the AllAuth Django extension. This extension provides a robust framework for managing user authentication securely, offering features such as secure password storage and authentication workflows.
+
+Sensitive information (such as the email adress) remains accessible only to authorized individuals, like admins an the owner of the data. Users are restricted from viewing or accessing sensitive data belonging to other users. This is due to the database, which requires a login.
+
+### Testing
+
+![lighthouse](/static/images/readme/lighthouse.png)
+![lighthouse](/static/images/readme/lighthouse2.png)
+
+### Jigsaw CSS Validator
+
+
+The Jigsaw CSS Validator does not throw any errors.
+
+![jigsaw validator](/static/images/readme/jigsaw.png)
+
+### W3C Validator
+
+The W3C HTML Validator shows no errors.
