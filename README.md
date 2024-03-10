@@ -253,7 +253,7 @@ The JS Hint Validator shows no errors.
 The Pep8 CI Linter has been diligently applied, ensuring that all files adhere impeccably to the esteemed guidelines of PEP 8.
 
 ### Manual Testing
-Sign Up, invalid Sign Up, Login, invalid Login, Logout testing table:
+#### Sign Up, invalid Sign Up, Login, invalid Login, Logout testing table:
 
 | Feature       | Expected Outcome                                                                                         | Testing Performed                                                                                   | Result                                                                    | Pass/Fail |
 |---------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------|
@@ -262,3 +262,48 @@ Sign Up, invalid Sign Up, Login, invalid Login, Logout testing table:
 | Login         | Can login in with the correct password and username.                                                      | Login with username = test, password = Secure123!                                                    | User is logged in.                                                        | Pass      |
 | Invalid Login | Users can't login with invalid credentials.                                                               | Login with username = test, password = InSecure123!                                                  | The user is not logged in.                                                | Pass      |
 | Logout        | After Confirming to logout, the user gets logged out.                                                     | Pressing Button to confirm the logout.                                                               | User is logged out.                                                       | Pass      |
+
+#### Comments testing table:
+
+| Feature    | Expected Outcome                                                                                                     | Testing Performed                                                                                     | Result                                                                                     | Pass/Fail |
+|------------|----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------|
+| Submit Comment | When a logged-in user fills the comment form and clicks on submit, the expected result is the comment is pending for admin approval. | A logged-in user fills the comment form and submits.                                                  | The comment is pending for admin approval.                                                 | Pass      |
+| Edit Comment  | When the user clicks on edit, the expected result is that the comment they wrote reappears in the comment form and the user can update. | A user clicks on edit for their comment.                                                              | The comment reappears in the comment form for updating.                                    | Pass      |
+| Delete Comment | When the user clicks on delete, the expected result is that a modal appears with the options to close the modal or confirm the delete of the comment. If the user clicks on delete, the comment is deleted. | A user clicks on delete for their comment, a modal appears, and they confirm the delete. | A modal appears with options to close or confirm deletion. After confirming, the comment is deleted. | Pass      |
+
+
+#### Reservations testing table:
+
+| Feature                  | Expected Outcome                                                                                                   | Testing Performed                                                                                                    | Result                                                                                                                   | Pass/Fail |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|-----------|
+| Complete Booking Submission | When a user fills in the reservation form with their name, date for booking, time, gender, and submits, a reservation is created and a confirmation message is displayed. | A user fills in the form with valid details including name, date (at least one day in advance), time, gender, and submits. | The reservation is successfully created, and the user receives a Django message confirming the date and time of the booking. | Pass      |
+| Incomplete Booking Submission | The form cannot be submitted if any required field (name, date, time, gender) is missing.                              | A user attempts to submit the form with one or more required fields missing.                                          | The submission is prevented, and the user is informed that all fields must be completed.                                | Pass      |
+| Booking Date Too Soon      | The user is alerted if the booking date is not at least one day in advance.                                           | A user attempts to book a reservation for the current day.                                                             | The user receives an alert message that they must choose a date at least one day in advance.                           | Pass      |
+
+
+#### About page testing table:
+
+| Feature                 | Expected Outcome                                                                                       | Testing Performed                                                                                   | Result                                                                                          | Pass/Fail |
+|-------------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-----------|
+| Post About Page Content | When the admin user posts new content to the About page, including a picture, the changes are visible on the About page. | The admin uploads a picture and creates content for the About page, then publishes the changes.   | The new content and picture are successfully posted and visible on the About page.             | Pass      |
+| Update About Page Content | When the admin user updates existing About page content, including changing the picture, the updates are immediately reflected. | The admin edits the existing About page content, changes the picture, and updates the changes. | The updated content and new picture are successfully reflected on the About page.              | Pass      |
+
+
+#### Our Work page testing table:
+
+| Feature            | Expected Outcome                                                                                                                  | Testing Performed                                                                                                                      | Result                                                                                                                       | Pass/Fail |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------|
+| Create New Post    | When the admin creates a new blog post with a title, username, optional image, content, status (draft or published), and an excerpt, the post is saved accordingly. | The admin navigates to the blog post creation panel, fills in the title, chooses a username, optionally picks an image, writes content, selects the status, writes an excerpt, and saves. | The blog post is successfully saved with the provided details, and its status is correctly set as either draft or published.  | Pass      |
+
+
+#### Admin comment approval table:
+
+| Feature                | Expected Outcome                                                                                          | Testing Performed                                                                                       | Result                                                                                        | Pass/Fail |
+|------------------------|-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------|
+| Approve User Comment   | When the admin approves a pending comment, the comment becomes visible on the site under the relevant post. | The admin navigates to the comment management panel, selects a pending comment, and approves it.       | The comment is successfully approved and becomes visible on the site.                         | Pass      |
+| Disapprove User Comment | When the admin disapproves a pending comment, the comment is deleted and not visible on the site. | The admin navigates to the comment management panel, selects a pending comment, and disapproves it.    | The comment is successfully disapproved and is not visible on the site.                       | Pass      |
+
+
+### Automatic Testing
+
+This project contains Unittests to automatically test the application.
