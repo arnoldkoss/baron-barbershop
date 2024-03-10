@@ -205,6 +205,18 @@ Inside the Django Admin panel, Administrators have acces to the models of the dj
 - I Consider adding a profile page for users to manage their information and preferences.
 - I Explore the possibility of adding a feature for users to like posts or content for increased engagement and interaction.
 
+### Data
+#### Database schema
+- Posts ERD
+![posts ERD](/static/images/readme/PostsERD.png)
+
+- Comments ERD
+![comments ERD](/static/images/readme/commentsERD.png)
+
+- Reservations ERD
+![reservations ERD](/static/images/readme/ReservERD.png)
+
+
 ### Security
 
 I strive to maintain optimal security measures in my Django project. I've ensured that only logged-in users can perform specific actions within the app. When a comment is made but not yet approved by the admin, only the author can view, update, or delete the comment. It's only after the admin's approval that the comment becomes visible to all users. Additionally, non-logged-in users are unable to leave comments; instead, they see a message prompting them to log in first before leaving a comment. These steps ensure both security and user engagement within the platform. Similarly, only logged-in users have the capability to make reservations, further enhancing security while fostering user engagement within the platform.
