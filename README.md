@@ -228,3 +228,26 @@ The Jigsaw CSS Validator does not throw any errors.
 ### W3C Validator
 
 The W3C HTML Validator shows no errors.
+
+Home page
+![Home](/static/images/readme/homeValidation.png)
+
+Our Work page
+![Our Work](/static/images/readme/blogValidator.png)
+
+Post
+![Post](/static/images/readme/postValidation.png)
+
+Reservation page
+![Reservations](/static/images/readme/resValidation.png)
+
+Logout page
+![logout](/static/images/readme/logoutValidation.png)
+
+### JS Hint Validator
+The JS Hint Validator shows no errors.
+
+![JShint](/static/images/readme/JShint.png)
+
+### PEP8
+The Pep8 CI Linter has been diligently applied, ensuring that all files adhere impeccably to the esteemed guidelines of PEP 8.
