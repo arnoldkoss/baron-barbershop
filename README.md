@@ -307,3 +307,31 @@ The Pep8 CI Linter has been diligently applied, ensuring that all files adhere i
 ### Automatic Testing
 
 This project contains Unittests to automatically test the application.
+Tests were performed for the about page views.py, for the blog forms.py and views.py, and for the reservations page forms.py and views.py.
+
+![python tests](/static/images/readme/tests.png)
+
+### Deployment
+
+#### Deployment Using Github
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+#### Deployment Using Heroku
+
+- Register for an account on Heroku or sign in.
+- Create a new app.
+- Name your App.
+- Connect your github repository to Heroku app.
+- Create a Live Database by adding the 
+ElephantSQL  add-on.
+- Create and Set up an email account for verification mails.
+- Deploy from "deploy", or choose an automatic deploy option.
+
+### Credits
+
+#### Code used
+
+I used the Blog walkthrough project as inspiration for the blog section of my project, but not to the full extent. I have tailored it to fit my view of how the site should look.
