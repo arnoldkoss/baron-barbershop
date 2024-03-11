@@ -43,7 +43,8 @@ def generate_time_choices():
     end = time(17, 30)
     delta = timedelta(minutes=30)
 
-    return [(t.strftime('%H:%M'), t.strftime('%H:%M')) for t in time_range(start, end, delta)]
+    return [(t.strftime('%H:%M'), t.strftime('%H:%M'))
+            for t in time_range(start, end, delta)]
 
 
 class ReservationForm(forms.ModelForm):
@@ -68,9 +69,8 @@ class ReservationForm(forms.ModelForm):
         """
         model = Reservation
         fields = ['name', 'date', 'time', 'gender']
-        widgets = {
-            'date': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
-        }
+        date_attrs = {'type': 'date', 'class': 'form-control'}
+        widgets = {'date': forms.DateInput(attrs=date_attrs)}
 
     def clean_date(self):
         """

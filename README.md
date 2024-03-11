@@ -8,6 +8,11 @@ The live site is here: [Baron Barbershop](https://baron-barbershop-8a2745877c29.
 
 
 ## CONTENT
+
+- [Technologies Used](#technologies-used)
+[Languages Used](#languages_used )
+[](#)
+
 ### Technologies Used
   - GitHub – storage and deployment
   - Heroku - Deployment
