@@ -55,10 +55,9 @@
         </li>
           <!-- About Link -->
           <li class="nav-item">
-            <a class="nav-link
-                  {% if request.path == about_url %}active" aria-current="page {%endif%}"
-              href="{% url 'about' %}">About</a>
-          </li>
+            <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
+                href="{% url 'about' %}">About</a>
+        </li>
           <!-- Blog Link -->
           <li class="nav-item">
             <a class="nav-link
@@ -69,7 +68,7 @@
           {% if user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link
-                  {% if request.path == reservation_url %}active" aria-current="page {%endif%}"
+                  {% if request.path == reservation_url %}active" aria-current="page{% endif %}"
               href="{% url 'reservation' %}">Reservations</a>
           </li>
           <!-- Logout Link (visible only for authenticated users) -->
@@ -80,13 +79,13 @@
           {% else %}
           <!-- Register Link (visible only for unauthenticated users) -->
           <li class="nav-item">
-            <a class="nav-link {% if request.path == signup_url %}active" aria-current="page {% endif %}"
-              href="{% url 'account_signup' %}">Register</a>
+            <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
+                href="{% url 'account_signup' %}">Register</a>
           </li>
           <!-- Login Link (visible only for unauthenticated users) -->
           <li class="nav-item">
-            <a class="nav-link {% if request.path == login_url %}active" aria-current="page {% endif %}"
-              href="{% url 'account_login' %}">Login</a>
+            <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
+                href="{% url 'account_login' %}">Login</a>
           </li>
           {% endif %}
 
