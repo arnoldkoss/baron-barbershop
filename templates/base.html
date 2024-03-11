@@ -52,6 +52,7 @@
           <li class="nav-item">
             <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
                 href="{% url 'home' %}">Home</a>
+                
         </li>
           <!-- About Link -->
           <li class="nav-item">
@@ -61,7 +62,7 @@
           <!-- Blog Link -->
           <li class="nav-item">
             <a class="nav-link
-                  {% if request.path == about_url %}active" aria-current="page {%endif%}" href="{% url 'blog' %}">Our
+                  {% if request.path == about_url %}active" aria-current="page{%endif%}" href="{% url 'blog' %}">Our
               Work</a>
           </li>
           <!-- Reservations Link (visible only for authenticated users) -->
