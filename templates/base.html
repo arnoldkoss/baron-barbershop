@@ -73,9 +73,9 @@
           </li>
           <!-- Logout Link (visible only for authenticated users) -->
           <li class="nav-item">
-            <a class="nav-link {% if request.path == logout_url %}active" aria-current="page {% endif %}"
-              href="{% url 'account_logout' %}">Logout</a>
-          </li>
+            <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
+                href="{% url 'account_logout' %}">Logout</a>
+        </li>
           {% else %}
           <!-- Register Link (visible only for unauthenticated users) -->
           <li class="nav-item">
