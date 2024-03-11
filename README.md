@@ -6,12 +6,63 @@ Under the hood, Baron Barbershop operates on the robust Python programming langu
 The live site is here: [Baron Barbershop](https://baron-barbershop-8a2745877c29.herokuapp.com/)
 
 
+![Responsive pic](/static/images/readme/amIresp.png)
+
 
 ## CONTENT
 
 - [Technologies Used](#technologies-used)
-[Languages Used](#languages_used )
-[](#)
+- [Languages Used](#languages_used )
+- [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+- [User Experience and Workflow](#user-experience-and-workflow)
+  - [Target Audience](#target-audience)
+  - [User Stories](#user-stories)
+  - [Workflow](#workflow)
+- [Design](#design)
+  - [Colour Scheme](#colour-scheme)
+  - [Typography](#typography)
+  - [Wireframes](#wireframes)
+- [Features](#features)
+  - [Navigation Bar](#navigation-bar)
+    - [Visitors](#visitors)
+    - [Signed-In Users](#signed-in-users)
+  - [User Account](#user-account)
+  - [User Sign up](#user-sign-up)
+  - [User Login](#user-login)
+  - [User Logout](#user-logout)
+  - [User Content Display](#user-content-display)
+  - [User Comment section](#user-comment-section)
+  - [User About section](#user-about-section)
+  - [User Reservation section](#user-reservation-section)
+  - [User Home page, Information section](#user-home-page-information-section)
+  - [Pagination](#pagination)
+  - [Messages](#messages)
+  - [Django Admin Panel](#django-admin-panel)
+- [Features Left to Implement](#features-left-to-implement)
+- [Data](#data)
+  - [Database Schema](#database-schema)
+- [Security](#security)
+- [Testing](#testing)
+  - [Jigsaw CSS Validator](#jigsaw-css-validator)
+  - [W3C Validator](#w3c-validator)
+  - [JS Hint Validator](#js-hint-validator)
+  - [PEP8](#pep8)
+  - [Manual Testing](#manual-testing)
+    - [Sign Up, invalid Sign Up, Login, invalid Login, Logout testing table](#sign-up-invalid-sign-up-login-invalid-login-logout-testing-table)
+    - [Comments testing table](#comments-testing-table)
+    - [Reservations testing table](#reservations-testing-table)
+    - [About page testing table](#about-page-testing-table)
+    - [Our Work page testing table](#our-work-page-testing-table)
+    - [Admin comment approval table](#admin-comment-approval-table)
+  - [Automatic Testing](#automatic-testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+  - [Deployment Using Github](#deployment-using-github)
+  - [Deployment Using Heroku](#deployment-using-heroku)
+- [Credits](#credits)
+  - [Code used](#code-used)
+  - [Content](#content)
+  - [Acknowledgments](#acknowledgments)
 
 ### Technologies Used
   - GitHub – storage and deployment
@@ -236,6 +287,7 @@ Sensitive information (such as the email adress) remains accessible only to auth
 
 ![lighthouse](/static/images/readme/lighthouse.png)
 ![lighthouse](/static/images/readme/lighthouse2.png)
+![lighthouse](/static/images/readme/lighth.png)
 
 ### Jigsaw CSS Validator
 
@@ -251,6 +303,9 @@ The W3C HTML Validator shows no errors.
 Home page
 ![Home](/static/images/readme/homeValidation.png)
 
+About page
+![About](/static/images/readme/aboutValidate.png)
+
 Our Work page
 ![Our Work](/static/images/readme/blogValidator.png)
 
@@ -262,6 +317,10 @@ Reservation page
 
 Logout page
 ![logout](/static/images/readme/logoutValidation.png)
+
+Login page
+![login](/static/images/readme/loginValidation.png)
+
 
 ### JS Hint Validator
 The JS Hint Validator shows no errors.
@@ -329,6 +388,12 @@ This project contains Unittests to automatically test the application.
 Tests were performed for the about page views.py, for the blog forms.py and views.py, and for the reservations page forms.py and views.py.
 
 ![python tests](/static/images/readme/tests.png)
+
+### Bugs
+- I have an HTML validation error on the signup page. I've checked the source code multiple times, and there doesn't seem to be any issue with the HTML, all closing tags are present. The error appears to originate from the password field of the form from Django's allauth package. Despite all my efforts, I have requested help from CI tutors, Roo and Alan, but the issue has still not been resolved.
+- This is not a bug, but I want to mention that when content for the posts is pasted into the Summernote form after being copied from somewhere else, validating the source code shows CSS errors related to Tailwind. When the text is directly entered into the form without being pasted, no errors are shown. The latest post added, the first one displayed in the blog content, was written directly in Summernote, and the validation proceeded without errors.
+
+![signup](/static/images/readme/signup.png)
 
 ### Deployment
 
